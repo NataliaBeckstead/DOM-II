@@ -103,3 +103,16 @@ const stopLink = document.querySelectorAll("a");
 stopLink.addEventListener("click", (event) => {
     event.preventDefault();
 });
+
+//GS animation
+const sandBus = document.querySelector("#sandBus");
+//logo.addEventListener("click", () => {
+    gsap.to('sandBus', {
+        duration: 2,
+        x: 200
+        //rotate: 180,
+        //ease: "elastic(1, 0.75)",
+        //yoyo:true,
+        //repeat: 1
+    });
+//})
